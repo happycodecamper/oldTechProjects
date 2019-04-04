@@ -1,0 +1,366 @@
+﻿/* ============== body ======================== */
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+}
+
+.jumbotron {
+    margin-bottom: 1px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+/* ============== navbar ======================== */
+nav {
+    font-size: 25px;
+}
+
+.navbar {
+    margin-bottom: 0;
+}
+
+.navbar-brand {
+    font-size: 25px;
+    padding-bottom: 1PX;
+    margin-bottom: 1px;
+}
+
+.navbar-nav {
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #000000;
+}
+
+
+/* ================  whoIam  ======================= */
+/* == photo img-hover ==*/
+#me {
+    animation-duration: 5s;
+}
+
+.grayscale {
+    -webkit-filter: brightness(1.10) grayscale(100%) contrast(90%);
+    -moz-filter: brightness(1.10) grayscale(100%) contrast(90%);
+    filter: brightness(1.10) grayscale(100%);
+}
+
+.text-size {
+    font-size: 25px;
+}
+
+.bg-1 {
+    background-color: #203A59;
+    height: auto;
+}
+
+.bg-2 {
+    background-color: #D6503E;
+    color: #ffffff;
+}
+
+.bg-3 {
+    background-color: #3F7624;
+}
+
+.photo-border {
+    border: 5px solid rgba(236, 84, 34, 0.69);
+    border-radius: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* circles */
+@media only screen and (min-width: 350px) {
+    .col {
+        padding: 5%;
+        margin-bottom: 5%;
+        display: inline-block;
+        position: relative;
+        width: 10%;
+        /*size of circle*/
+        min-width: 50px;
+        /*size of circle*/
+        margin: 0;
+        background-color: transparent;
+        border-top: none;
+    }
+    .spacer {
+        position: relative;
+        padding-top: 100%;
+    }
+}
+
+.circle {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #e6eec6;
+    color: #333;
+    border-radius: 50%;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    text-align: center;
+    display: block;
+    padding: 5px;
+    border: 5px solid #bbe419;
+    -webkit-transition: all 1s ease-out;
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    transition: all 1s ease-out;
+}
+
+.circle:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -2%;
+}
+
+.circle:hover {
+    background-color: maroon;
+    border: 5px solid #4d0000;
+    color: #fff;
+}
+
+.circle img {
+    width: 100%;
+    box-shadow: 4px 4px 6px hsl(0, 0%, 0%);
+}
+
+
+/* == columns of same height styles == */
+.container-xs-height {
+    display: table;
+}
+
+.row-xs-height {
+    display: table-row;
+}
+
+.col-xs-height {
+    display: table-cell;
+    float: none;
+}
+
+@media (min-width: 768px) {
+    .container-sm-height {
+        display: table;
+    }
+    .row-sm-height {
+        display: table-row;
+    }
+    .col-sm-height {
+        display: table-cell;
+        float: none;
+    }
+}
+
+@media (min-width: 992px) {
+    .container-md-height {
+        display: table;
+    }
+    .row-md-height {
+        display: table-row;
+    }
+    .col-md-height {
+        display: table-cell;
+        float: none;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container-lg-height {
+        display: table;
+    }
+    .row-lg-height {
+        display: table-row;
+    }
+    .col-lg-height {
+        display: table-cell;
+        float: none;
+    }
+}
+
+/* ================ whatIdo ======================= */
+/* the hover effect */
+.hovereffect {
+    margin: 1% 1% 1% 1%;
+    width: 75%;
+    height: 75%;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    cursor: default;
+    top: 10px;
+    left: 50px;
+    bottom: 50px;
+}
+
+.hovereffect .overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    background-size: 100%;
+}
+
+.hovereffect img {
+    display: block;
+    position: relative;
+    -webkit-transition: all .4s linear;
+    -moz-transition: all .4s linear;
+    -o-transition: all .4s linear;
+    transition: all .4s linear;
+}
+
+.hovereffect h2 {
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    font-size: 0.75em;
+    background: rgba(0, 0, 0, 0.6);
+    -webkit-transition: all .1s ease-in-out;
+    -moz-transition: all .1s ease-in-out;
+    -o-transition: all .1s ease-in-out;
+    transition: all .1s ease-in-out;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 1%;
+}
+
+.hovereffect a.info {
+    text-decoration: none;
+    display: inline-block;
+    text-transform: uppercase;
+    color: #fff;
+    border: 1px solid #fff;
+    background-color: transparent;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    margin: 5px 0 0;
+    font-size: 0.9em;
+    padding: 7px 14px;
+}
+
+.hovereffect a.info:hover {
+    box-shadow: 0 0 5px #fff;
+}
+
+.hovereffect:hover img {
+    -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.hovereffect:hover .overlay {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.hovereffect:hover h2,
+.hovereffect:hover a.info {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.hovereffect:hover a.info {
+    -webkit-transition-delay: .2s;
+    -moz-transition-delay: .2s;
+    -o-transition-delay: .2s;
+    transition-delay: .2s;
+}
+
+.link a {
+    text-decoration: none;
+    display: inline-block;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin: 50px 0 0;
+    font-size: 0.9em;
+    padding: 70px 14px;
+}
+
+
+/* ================ whereIam ======================= */
+.btn {
+    position: relative;
+    display: inline-block;
+    color: #000;
+    border: 2px outset rgba(0, 0, 0, 0.9);
+    background: #C0C0C0;
+    text-shadow: 1px 1px 1px hsla(0, 0%, 0%, 0.20);
+    box-shadow: 3px 3px 3px hsla(0, 0%, 0%, 0.50);
+    letter-spacing: 2px;
+    -moz-transition: 0.6s;
+    -o-transition: 0.6s;
+    -webkit-transition: 0.6s;
+    transition: 0.6s;
+}
+
+.btn:hover {
+    color: #fff;
+    border: 2px outset rgba(0, 0, 0, 0.9);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    -moz-transition: 0.2s;
+    -o-transition: 0.2s;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    text-shadow: 1px 1px 1px hsla(0, 0%, 0%, 0.90);
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+    /* letter-spacing: 2px;*/
+}
+
+html>body .WhereIam {
+    width: 100%;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    padding-left: 0;
+    margin-left: -5px;
+}
+
+.btn-space {
+    margin-bottom: 20px;
+}
+
+.btn1{
+    font-size: 120%;
+}
+.btn3{
+    font-size: 115%;
+}
+.btn4 {
+    font-size: 80%;
+    padding: 10px 10px;
+}

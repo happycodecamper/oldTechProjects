@@ -1,0 +1,100 @@
+﻿
+body {
+    background-color: #b6ff00;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.well {
+    background-color: black;
+    color: #ffffff;
+}
+
+.title {
+    font-size: 50px;
+    margin: 20px;
+}
+
+.message {
+    font-size: 25px;
+    margin: 15px 25px 15px 15px;
+    padding: 20px;
+}
+
+.quote-area {
+    background-color: grey;
+    width: 33%;
+    margin-right: auto;
+    margin-left: auto;
+    color: #ffffff;
+    border-color: black;
+    border-style: inset;
+    border-radius: 20px;
+    box-shadow: 0 20px 20px 0 black, 0 10px 200px 0 black;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    padding: 20px;
+    height: auto;
+}
+
+.quote {
+    font-size: 25px;
+    text-align: left;
+       
+}
+
+.author {
+    font-size: 15px;
+    font-style: italic;
+  
+}
+
+.newQuote {
+    float: left;
+    margin: 200px;
+    padding: 10px;
+    max-width: 300px;
+    height: 50%;
+    border: 10px solid black;
+}
+
+html > body .fa {
+    background-color: rgba(200, 56, 56, 0.00);
+    padding: 10px;
+}
+
+html > body .button_newQuote {
+    border: 1px solid #343e43;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 3px;
+    border-radius: 10px;
+    font-size: 12px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 15px;
+    margin: 20px;
+    text-decoration: none;
+    display: inline-block;
+    text-shadow: -1px -1px 0 rgba(31,31,31,0.3);
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: #CEDCE7;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#CEDCE7), to(#596a72));
+    background-image: -webkit-linear-gradient(top, #CEDCE7, #808080);
+    background-image: -moz-linear-gradient(top, #CEDCE7, #808080);
+    background-image: -ms-linear-gradient(top, #CEDCE7, #808080);
+    background-image: -o-linear-gradient(top, #CEDCE7, #808080);
+    background-image: linear-gradient(to bottom, #CEDCE7, #808080);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#CEDCE7, endColorstr=#808080);
+}
+
+    html > body .button_newQuote:hover {
+        border: 1px solid #434f55;
+        color: hsl(205, 85%, 45%);
+        background-color: rgba(200, 56, 56, 0.00);
+        background-image: -webkit-gradient(linear, left top, left bottom, from(#acc4d6), to(#808080));
+        background-image: -webkit-linear-gradient(top, #acc4d6, #808080);
+        background-image: -moz-linear-gradient(top, #acc4d6, #808080);
+        background-image: -ms-linear-gradient(top, #acc4d6, #808080);
+        background-image: -o-linear-gradient(top, #acc4d6, #808080);
+        background-image: linear-gradient(to bottom, #acc4d6, #808080);
+        filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#acc4d6, endColorstr=#808080);
+    }

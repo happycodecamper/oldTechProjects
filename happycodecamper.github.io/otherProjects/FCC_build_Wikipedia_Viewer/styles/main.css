@@ -1,0 +1,124 @@
+﻿html > body {
+    background-color: #4b4747;
+    font-family: 'Merriweather', 'Times New Roman', Helvetica, sans-serif;
+}
+
+html > body #wiki-logo {
+    margin-top: -5%;
+    border-radius: 25px;
+    display: inline-block;
+}
+
+html > body #word-search {
+    font-size: 60px;
+    font-size-adjust: 0.40;
+    font-weight: bold;
+    color: #11f1e5;
+    text-shadow: 5px 5px 10px black;
+    padding-top: 10px;
+}
+
+html > body .button1 {
+    border: 1px solid rgba(17, 241, 229, 0.67);
+    -webkit-box-shadow: #626565 4px 4px 4px;
+    -moz-box-shadow: #626565 4px 4px 4px;
+    box-shadow: #626565 4px 4px 4px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    -moz-transition: 0.6s;
+    -o-transition: 0.6s;
+    -webkit-transition: 0.6s;
+    transition: 0.6s;
+    margin-bottom: 50px;
+    text-decoration: none;
+    display: inline-block;
+    text-shadow: 2px 2px 0 rgba(0,0,0,0.3);
+    font-weight: bold;
+    color: black;
+    background-color: rgba(17, 241, 229, 0.67);
+}
+
+    html > body .button1:hover {
+        border: 1px solid rgba(204, 192, 156, 0.74);
+        -webkit-box-shadow: rgba(204, 192, 156, 0.74) 4px 4px 4px;
+        -moz-box-shadow: rgba(204, 192, 156, 0.74) 4px 4px 4px;
+        box-shadow: rgba(204, 192, 156, 0.74) 4px 4px 4px;
+        background-color: rgba(204, 192, 156, 0.74);
+    }
+
+html > body .button2 {
+    margin: 3.0%;
+    border: 1px solid rgb(200, 122, 115);
+    -webkit-box-shadow: rgb(200, 122, 115) 2px 2px 2px;
+    -moz-box-shadow: rgb(200, 122, 115) 2px 2px 2px;
+    box-shadow: rgb(200, 122, 115) 2px 2px 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    -moz-transition: 0.6s;
+    -o-transition: 0.6s;
+    -webkit-transition: 0.6s;
+    transition: 0.6s;
+    font-size: 12px;
+    padding: 10px;
+    text-decoration: none;
+    display: inline-block;
+    text-shadow: 2px 1px 0 rgba(0,0,0,0.3);
+    font-weight: bold;
+    color: #171717;
+    background-color: rgb(200, 122, 115);
+}
+
+    html > body .button2:hover {
+        border: 1px solid rgba(204, 192, 156, 0.74);
+        -webkit-box-shadow: rgba(204, 192, 156, 0.74) 2px 2px 2px;
+        -moz-box-shadow: rgba(204, 192, 156, 0.74) 2px 2px 2px;
+        box-shadow: rgba(204, 192, 156, 0.74) 2px 2px 2px;
+        background-color: rgba(204, 192, 156, 0.74);
+    }
+
+html > body .form-control {
+    outline: none;
+    width: 50%;
+    padding: 20px 20px;
+    margin: 20px 10px;
+    display: inline-block;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: rgba(244, 240, 231, 0.74);
+    color: black;
+    background-position: 1px 1px;
+    background-repeat: no-repeat;
+    padding-left: 20px;
+}
+
+    html > body .form-control:focus {
+        border: 1px solid #626565;
+    }
+
+#output {
+    font-size: 15px;
+    font-size-adjust: 0.40;
+    color: #11f1e5;
+    text-shadow: 5px 5px 10px black;
+    padding: 10px 20px 10px 20px;
+    width: 100%;
+    text-align: left;
+}
+
+html > body ul {
+    list-style: none;
+}
+
+a.pretty {
+    color: rgb(200, 122, 115);
+    list-style: none;
+}
+
+.author {
+    color: rgb(204, 98, 88);
+    font-size: 15px;
+    text-shadow: 5px 5px 10px black;
+}

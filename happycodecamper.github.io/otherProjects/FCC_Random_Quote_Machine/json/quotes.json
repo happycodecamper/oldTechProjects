@@ -1,0 +1,68 @@
+[
+    {
+        "id": 0,
+        "quote": " “A room without books is like a body without a soul.” ",
+        "author": "― Marcus Tullius Cicero"
+    },
+
+    {
+        "id": 1,
+        "quote": " “If you tell the truth, you don't have to remember anything.” ",
+        "author": "― Mark Twain"
+    },
+
+    {
+        "id": 2,
+        "quote": " “Live as if you were to die tomorrow. Learn as if you were to live forever.” ",
+        "author": "― Mahatma Gandhi"
+    },
+
+
+    {
+        "id": 3,
+        "quote": " “Darkness cannot drive out darkness: only light can do that. Hate cannot drive out hate: only love can do that.” ",
+        "author": "― Martin Luther King Jr."
+    },
+
+    {
+        "id": 4,
+        "quote": " “Insanity is doing the same thing, over and over again, but expecting different results.” ",
+        "author": "― Narcotics Anonymous"
+    },
+
+    {
+        "id": 5,
+        "quote": " “There are only two ways to live your life. One is as though nothing is a miracle. The other is as though everything is a miracle.” ",
+        "author": "― Albert Einstein"
+    },
+
+    {
+        "id": 6,
+        "quote": " “Whenever you find yourself on the side of the majority, it is time to reform (or pause and reflect).”  ",
+        "author": "― Mark Twain"
+    },
+
+    {
+        "id": 7,
+        "quote": " “Logic will get you from A to Z; imagination will get you everywhere.” ",
+        "author": "― Albert Einstein"
+    },
+
+    {
+        "id": 8,
+        "quote": " “Not all of us can do great things. But we can do small things with great love.” ",
+        "author": "― Mother Teresa"
+    },
+
+    {
+        "id": 9,
+        "quote": " “When one door of happiness closes, another opens; but often we look so long at the closed door that we do not see the one which has been opened for us.”  ",
+        "author": "― Helen Keller"
+    },
+
+    {
+        "id": 10,
+        "quote": " “I have never let my schooling interfere with my education.” ",
+        "author": "― Mark Twain"
+    }
+]

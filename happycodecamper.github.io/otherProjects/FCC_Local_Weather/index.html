@@ -1,0 +1,64 @@
+﻿<!-- === Examples === -->
+<!--http://codepen.io/FreeCodeCamp/full/bELRjV -->
+<!--http://codepen.io/AdventureBear/full/yNBJRj -->
+<!--  installed fontawesome and bootstrap 10/3/2016 -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Maria's Local Weather app</title>
+    <meta charset="utf-8" />
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <script src="Scripts/jquery-3.1.1.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+
+    <link href="Content/font-awesome.css" rel="stylesheet" />
+    <link href="styles/main.css" rel="stylesheet" />
+    <script src="JS/app.js"></script>
+</head>
+<body>
+    <!-- ================================= -->
+    <!-- begin title, message and temperature -->
+    <div class="text-center" id="title">
+        Local Weather
+        <div class="container-fluid">
+            <div class="row">
+                <div class="text-center" id="message1">
+                    Please make sure your location is active to access your local weather.
+                </div>
+                <div class="text-center" id="message2">
+                    Click on the temperature if you want to see the temperature in Celsius
+                </div>
+
+                <div id="temperature">
+                    <div id="Fahrenheit"></div>
+                </div>
+            </div>
+        </div>
+    </div><!-- End title, message and temperature -->
+    <!-- ================================= -->
+    <!-- begin button class -->
+    <div class="container-fluid">
+        <div class="row ">
+            <div class="col-md-4  text-center">
+                <a class="button" id="city" title="City">CITY</a>
+            </div>
+            <div class="col-md-4   text-center">
+                <a class="button" id="weather" title="Weather">WEATHER</a>
+            </div>
+            <div class="col-md-4   text-center">
+                <a class="button" id="windSpeed" title="Wind">WIND</a>
+            </div>
+        </div>
+    </div><!-- end button class -->
+    <!-- ============================ -->
+    <!-- begin author-page -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <div class="author-page">Written and coded by &copy;Maria Brito</div>
+            </div>
+        </div>
+    </div><!-- end author-page -->
+</body>
+</html>

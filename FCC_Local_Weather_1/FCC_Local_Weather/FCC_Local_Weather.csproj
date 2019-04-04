@@ -1,0 +1,404 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B1C301C5-C6DA-441D-A92F-B72F64A4BABB}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FCC_Local_Weather</RootNamespace>
+    <AssemblyName>FCC_Local_Weather</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="img\bay_Bridge.jpg" />
+    <Content Include="img\canyon_River.jpg" />
+    <Content Include="packages.config" />
+    <Content Include="fonts\FontAwesome.otf" />
+    <Content Include="fonts\fontawesome-webfont.woff2" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="Scripts\jquery-3.1.1.slim.min.map" />
+    <Content Include="Scripts\jquery-3.1.1.min.map" />
+    <Content Include="styles\weather-icons-master\.npmignore" />
+    <Content Include="styles\weather-icons-master\bower.json" />
+    <Content Include="styles\weather-icons-master\font\weathericons-regular-webfont.eot" />
+    <Content Include="styles\weather-icons-master\font\weathericons-regular-webfont.ttf" />
+    <Content Include="styles\weather-icons-master\font\weathericons-regular-webfont.woff" />
+    <Content Include="styles\weather-icons-master\font\weathericons-regular-webfont.woff2" />
+    <Content Include="styles\weather-icons-master\less\icon-classes\classes-beaufort.less" />
+    <Content Include="styles\weather-icons-master\less\icon-classes\classes-day.less" />
+    <Content Include="styles\weather-icons-master\less\icon-classes\classes-direction.less" />
+    <Content Include="styles\weather-icons-master\less\icon-classes\classes-misc.less" />
+    <Content Include="styles\weather-icons-master\less\icon-classes\classes-moon-aliases.less" />
+    <Content Include="styles\weather-icons-master\less\icon-classes\classes-moon.less" />
+    <Content Include="styles\weather-icons-master\less\icon-classes\classes-neutral.less" />
+    <Content Include="styles\weather-icons-master\less\icon-classes\classes-night.less" />
+    <Content Include="styles\weather-icons-master\less\icon-classes\classes-time.less" />
+    <Content Include="styles\weather-icons-master\less\icon-classes\classes-wind-aliases.less" />
+    <Content Include="styles\weather-icons-master\less\icon-classes\classes-wind-degrees.less" />
+    <Content Include="styles\weather-icons-master\less\icon-classes\classes-wind.less" />
+    <Content Include="styles\weather-icons-master\less\icon-variables\variables-beaufort.less" />
+    <Content Include="styles\weather-icons-master\less\icon-variables\variables-day.less" />
+    <Content Include="styles\weather-icons-master\less\icon-variables\variables-direction.less" />
+    <Content Include="styles\weather-icons-master\less\icon-variables\variables-misc.less" />
+    <Content Include="styles\weather-icons-master\less\icon-variables\variables-moon.less" />
+    <Content Include="styles\weather-icons-master\less\icon-variables\variables-neutral.less" />
+    <Content Include="styles\weather-icons-master\less\icon-variables\variables-night.less" />
+    <Content Include="styles\weather-icons-master\less\icon-variables\variables-time.less" />
+    <Content Include="styles\weather-icons-master\less\icon-variables\variables-wind-names.less" />
+    <Content Include="styles\weather-icons-master\less\mappings\wi-forecast-io.less" />
+    <Content Include="styles\weather-icons-master\less\mappings\wi-owm.less" />
+    <Content Include="styles\weather-icons-master\less\mappings\wi-wmo4680.less" />
+    <Content Include="styles\weather-icons-master\less\mappings\wi-wunderground.less" />
+    <Content Include="styles\weather-icons-master\less\mappings\wi-yahoo.less" />
+    <Content Include="styles\weather-icons-master\less\weather-icons-classes.less" />
+    <Content Include="styles\weather-icons-master\less\weather-icons-core.less" />
+    <Content Include="styles\weather-icons-master\less\weather-icons-variables.less" />
+    <Content Include="styles\weather-icons-master\less\weather-icons-wind.less" />
+    <Content Include="styles\weather-icons-master\less\weather-icons-wind.min.less" />
+    <Content Include="styles\weather-icons-master\less\weather-icons.less" />
+    <Content Include="styles\weather-icons-master\less\weather-icons.min.less" />
+    <Content Include="styles\weather-icons-master\package.json" />
+    <Content Include="styles\weather-icons-master\README.md" />
+    <Content Include="styles\weather-icons-master\sass\icon-classes\classes-beaufort.scss" />
+    <Content Include="styles\weather-icons-master\sass\icon-classes\classes-day.scss" />
+    <Content Include="styles\weather-icons-master\sass\icon-classes\classes-direction.scss" />
+    <Content Include="styles\weather-icons-master\sass\icon-classes\classes-misc.scss" />
+    <Content Include="styles\weather-icons-master\sass\icon-classes\classes-moon-aliases.scss" />
+    <Content Include="styles\weather-icons-master\sass\icon-classes\classes-moon.scss" />
+    <Content Include="styles\weather-icons-master\sass\icon-classes\classes-neutral.scss" />
+    <Content Include="styles\weather-icons-master\sass\icon-classes\classes-night.scss" />
+    <Content Include="styles\weather-icons-master\sass\icon-classes\classes-time.scss" />
+    <Content Include="styles\weather-icons-master\sass\icon-classes\classes-wind-aliases.scss" />
+    <Content Include="styles\weather-icons-master\sass\icon-classes\classes-wind-degrees.scss" />
+    <Content Include="styles\weather-icons-master\sass\icon-classes\classes-wind.scss" />
+    <Content Include="styles\weather-icons-master\sass\icon-variables\variables-beaufort.scss" />
+    <Content Include="styles\weather-icons-master\sass\icon-variables\variables-day.scss" />
+    <Content Include="styles\weather-icons-master\sass\icon-variables\variables-direction.scss" />
+    <Content Include="styles\weather-icons-master\sass\icon-variables\variables-misc.scss" />
+    <Content Include="styles\weather-icons-master\sass\icon-variables\variables-moon.scss" />
+    <Content Include="styles\weather-icons-master\sass\icon-variables\variables-neutral.scss" />
+    <Content Include="styles\weather-icons-master\sass\icon-variables\variables-night.scss" />
+    <Content Include="styles\weather-icons-master\sass\icon-variables\variables-time.scss" />
+    <Content Include="styles\weather-icons-master\sass\icon-variables\variables-wind-names.scss" />
+    <Content Include="styles\weather-icons-master\sass\mappings\wi-forecast-io.scss" />
+    <Content Include="styles\weather-icons-master\sass\mappings\wi-owm.scss" />
+    <Content Include="styles\weather-icons-master\sass\mappings\wi-wmo4680.scss" />
+    <Content Include="styles\weather-icons-master\sass\mappings\wi-wunderground.scss" />
+    <Content Include="styles\weather-icons-master\sass\mappings\wi-yahoo.scss" />
+    <Content Include="styles\weather-icons-master\sass\weather-icons-classes.scss" />
+    <Content Include="styles\weather-icons-master\sass\weather-icons-core.scss" />
+    <Content Include="styles\weather-icons-master\sass\weather-icons-variables.scss" />
+    <Content Include="styles\weather-icons-master\sass\weather-icons-wind.min.scss" />
+    <Content Include="styles\weather-icons-master\sass\weather-icons-wind.scss" />
+    <Content Include="styles\weather-icons-master\sass\weather-icons.min.scss" />
+    <Content Include="styles\weather-icons-master\sass\weather-icons.scss" />
+    <Content Include="styles\weather-icons-master\_builder\beaufort.edn" />
+    <Content Include="styles\weather-icons-master\_builder\csv\bak.csv" />
+    <Content Include="styles\weather-icons-master\_builder\csv\beaufort.csv" />
+    <Content Include="styles\weather-icons-master\_builder\csv\day.csv" />
+    <Content Include="styles\weather-icons-master\_builder\csv\direction.csv" />
+    <Content Include="styles\weather-icons-master\_builder\csv\misc.csv" />
+    <Content Include="styles\weather-icons-master\_builder\csv\moon.csv" />
+    <Content Include="styles\weather-icons-master\_builder\csv\neutral.csv" />
+    <Content Include="styles\weather-icons-master\_builder\csv\night.csv" />
+    <Content Include="styles\weather-icons-master\_builder\csv\temp.csv" />
+    <Content Include="styles\weather-icons-master\_builder\csv\time.csv" />
+    <Content Include="styles\weather-icons-master\_builder\csv\wind-degrees.csv" />
+    <Content Include="styles\weather-icons-master\_builder\csv\wind.csv" />
+    <Content Include="styles\weather-icons-master\_builder\day.edn" />
+    <Content Include="styles\weather-icons-master\_builder\direction.edn" />
+    <Content Include="styles\weather-icons-master\_builder\misc.edn" />
+    <Content Include="styles\weather-icons-master\_builder\moon.edn" />
+    <Content Include="styles\weather-icons-master\_builder\neutral.edn" />
+    <Content Include="styles\weather-icons-master\_builder\night.edn" />
+    <Content Include="styles\weather-icons-master\_builder\templates.edn" />
+    <Content Include="styles\weather-icons-master\_builder\time.edn" />
+    <Content Include="styles\weather-icons-master\_builder\wbuilder" />
+    <Content Include="styles\weather-icons-master\_builder\wind-degrees.edn" />
+    <Content Include="styles\weather-icons-master\_builder\wind.edn" />
+    <Content Include="styles\weather-icons-master\_docs\font-source\artwork\cloud pieces.ai" />
+    <Content Include="styles\weather-icons-master\_docs\font-source\artwork\icon template.ai" />
+    <Content Include="styles\weather-icons-master\_docs\font-source\artwork\tsunami.ai" />
+    <Content Include="styles\weather-icons-master\_docs\font-source\weathericons-regular.glyphs" />
+    <Content Include="styles\weather-icons-master\_docs\font-source\weathericons-regular.otf" />
+    <Content Include="styles\weather-icons-master\_docs\gh-pages\CNAME" />
+    <Content Include="styles\weather-icons-master\_docs\gh-pages\fonts\fontawesome-webfont.eot" />
+    <Content Include="styles\weather-icons-master\_docs\gh-pages\fonts\fontawesome-webfont.ttf" />
+    <Content Include="styles\weather-icons-master\_docs\gh-pages\fonts\fontawesome-webfont.woff" />
+    <Content Include="styles\weather-icons-master\_docs\gh-pages\fonts\fontawesome-webfont.woff2" />
+    <Content Include="styles\weather-icons-master\_docs\gh-pages\fonts\FontAwesome.otf" />
+    <Content Include="styles\weather-icons-master\_docs\gh-pages\font\weathericons-regular-webfont.eot" />
+    <Content Include="styles\weather-icons-master\_docs\gh-pages\font\weathericons-regular-webfont.ttf" />
+    <Content Include="styles\weather-icons-master\_docs\gh-pages\font\weathericons-regular-webfont.woff" />
+    <Content Include="styles\weather-icons-master\_docs\gh-pages\font\weathericons-regular-webfont.woff2" />
+    <Content Include="styles\weather-icons-master\_docs\jade\api-list.jade" />
+    <Content Include="styles\weather-icons-master\_docs\jade\icon-list-beaufort.jade" />
+    <Content Include="styles\weather-icons-master\_docs\jade\icon-list-day.jade" />
+    <Content Include="styles\weather-icons-master\_docs\jade\icon-list-direction.jade" />
+    <Content Include="styles\weather-icons-master\_docs\jade\icon-list-misc.jade" />
+    <Content Include="styles\weather-icons-master\_docs\jade\icon-list-moon.jade" />
+    <Content Include="styles\weather-icons-master\_docs\jade\icon-list-neutral.jade" />
+    <Content Include="styles\weather-icons-master\_docs\jade\icon-list-night.jade" />
+    <Content Include="styles\weather-icons-master\_docs\jade\icon-list-time.jade" />
+    <Content Include="styles\weather-icons-master\_docs\jade\icon-list-wind-cardinal.jade" />
+    <Content Include="styles\weather-icons-master\_docs\jade\icon-list-wind.jade" />
+    <Content Include="styles\weather-icons-master\_docs\jade\icon-list.jade" />
+    <Content Include="styles\weather-icons-master\_docs\jade\index.jade" />
+    <Content Include="styles\weather-icons-master\_docs\jade\new-icons.jade" />
+    <Content Include="styles\weather-icons-master\_docs\less\bootstrap-includes.less" />
+    <Content Include="styles\weather-icons-master\_docs\less\bootstrap\alerts.less" />
+    <Content Include="styles\weather-icons-master\_docs\less\bootstrap\badges.less" />
+    <Content Include="styles\weather-icons-master\_docs\less\bootstrap\bootstrap.less" />
+    <Content Include="styles\weather-icons-master\_docs\less\bootstrap\breadcrumbs.less" />
+    <Content Include="styles\weather-icons-master\_docs\less\bootstrap\button-groups.less" />
+    <Content Include="styles\weather-icons-master\_docs\less\bootstrap\buttons.less" />
+    <Content Include="styles\weather-icons-master\_docs\less\bootstrap\carousel.less" />
+    <Content Include="styles\weather-icons-master\_docs\less\bootstrap\close.less" />
+    <Content Include="styles\weather-icons-master\_docs\less\bootstrap\code.less" />
+    <Content Include="styles\weather-icons-master\_docs\less\bootstrap\component-animations.less" />
+    <Content Include="styles\weather-icons-master\_docs\less\bootstrap\dropdowns.less" />
+    <Content Include="styles\weather-icons-master\_docs\less\bootstrap\forms.less" />
+    <Content Include="styles\weather-icons-master\_docs\less\bootstrap\glyphicons.less" />
+    <Content Include="styles\weather-icons-master\_docs\less\bootstrap\grid.less" />
+    <Content Include="styles\weather-icons-master\_docs\less\bootstrap\input-groups.less" />
+    <Content Include="styles\weather-icons-master\_docs\less\bootstrap\jumbotron.less" />
+    <Content Include="styles\weather-icons-master\_docs\less\bootstrap\labels.less" />
+    <Content Include="styles\weather-icons-master\_docs\less\bootstrap\list-group.less" />
+    <Content Include="styles\weather-icons-master\_docs\less\bootstrap\media.less" />
+    <Content Include="styles\weather-icons-master\_docs\less\bootstrap\mixins.less" />
+    <Content Include="styles\weather-icons-master\_docs\less\bootstrap\mixins\alerts.less" />
+    <Content Include="styles\weather-icons-master\_docs\less\bootstrap\mixins\background-variant.less" />
+    <Content Include="styles\weather-icons-master\_docs\less\bootstrap\mixins\border-radius.less" />
+    <Content Include="styles\weather-icons-master\_docs\less\bootstrap\mixins\buttons.less" />
+    <Content Include="styles\weather-icons-master\_docs\less\bootstrap\mixins\center-block.less" />
+    <Content Include="styles\weather-icons-master\_docs\less\bootstrap\mixins\clearfix.less" />
+    <Content Include="styles\weather-icons-master\_docs\less\bootstrap\mixins\forms.less" />
+    <Content Include="styles\weather-icons-master\_docs\less\bootstrap\mixins\gradients.less" />
+    <Content Include="styles\weather-icons-master\_docs\less\bootstrap\mixins\grid-framework.less" />
+    <Content Include="styles\weather-icons-master\_docs\less\bootstrap\mixins\grid.less" />
+    <Content Include="styles\weather-icons-master\_docs\less\bootstrap\mixins\hide-text.less" />
+    <Content Include="styles\weather-icons-master\_docs\less\bootstrap\mixins\image.less" />
+    <Content Include="styles\weather-icons-master\_docs\less\bootstrap\mixins\labels.less" />
+    <Content Include="styles\weather-icons-master\_docs\less\bootstrap\mixins\list-group.less" />
+    <Content Include="styles\weather-icons-master\_docs\less\bootstrap\mixins\nav-divider.less" />
+    <Content Include="styles\weather-icons-master\_docs\less\bootstrap\mixins\nav-vertical-align.less" />
+    <Content Include="styles\weather-icons-master\_docs\less\bootstrap\mixins\opacity.less" />
+    <Content Include="styles\weather-icons-master\_docs\less\bootstrap\mixins\pagination.less" />
+    <Content Include="styles\weather-icons-master\_docs\less\bootstrap\mixins\panels.less" />
+    <Content Include="styles\weather-icons-master\_docs\less\bootstrap\mixins\progress-bar.less" />
+    <Content Include="styles\weather-icons-master\_docs\less\bootstrap\mixins\reset-filter.less" />
+    <Content Include="styles\weather-icons-master\_docs\less\bootstrap\mixins\reset-text.less" />
+    <Content Include="styles\weather-icons-master\_docs\less\bootstrap\mixins\resize.less" />
+    <Content Include="styles\weather-icons-master\_docs\less\bootstrap\mixins\responsive-visibility.less" />
+    <Content Include="styles\weather-icons-master\_docs\less\bootstrap\mixins\size.less" />
+    <Content Include="styles\weather-icons-master\_docs\less\bootstrap\mixins\tab-focus.less" />
+    <Content Include="styles\weather-icons-master\_docs\less\bootstrap\mixins\table-row.less" />
+    <Content Include="styles\weather-icons-master\_docs\less\bootstrap\mixins\text-emphasis.less" />
+    <Content Include="styles\weather-icons-master\_docs\less\bootstrap\mixins\text-overflow.less" />
+    <Content Include="styles\weather-icons-master\_docs\less\bootstrap\mixins\vendor-prefixes.less" />
+    <Content Include="styles\weather-icons-master\_docs\less\bootstrap\modals.less" />
+    <Content Include="styles\weather-icons-master\_docs\less\bootstrap\navbar.less" />
+    <Content Include="styles\weather-icons-master\_docs\less\bootstrap\navs.less" />
+    <Content Include="styles\weather-icons-master\_docs\less\bootstrap\normalize.less" />
+    <Content Include="styles\weather-icons-master\_docs\less\bootstrap\pager.less" />
+    <Content Include="styles\weather-icons-master\_docs\less\bootstrap\pagination.less" />
+    <Content Include="styles\weather-icons-master\_docs\less\bootstrap\panels.less" />
+    <Content Include="styles\weather-icons-master\_docs\less\bootstrap\popovers.less" />
+    <Content Include="styles\weather-icons-master\_docs\less\bootstrap\print.less" />
+    <Content Include="styles\weather-icons-master\_docs\less\bootstrap\progress-bars.less" />
+    <Content Include="styles\weather-icons-master\_docs\less\bootstrap\responsive-embed.less" />
+    <Content Include="styles\weather-icons-master\_docs\less\bootstrap\responsive-utilities.less" />
+    <Content Include="styles\weather-icons-master\_docs\less\bootstrap\scaffolding.less" />
+    <Content Include="styles\weather-icons-master\_docs\less\bootstrap\tables.less" />
+    <Content Include="styles\weather-icons-master\_docs\less\bootstrap\theme.less" />
+    <Content Include="styles\weather-icons-master\_docs\less\bootstrap\thumbnails.less" />
+    <Content Include="styles\weather-icons-master\_docs\less\bootstrap\tooltip.less" />
+    <Content Include="styles\weather-icons-master\_docs\less\bootstrap\type.less" />
+    <Content Include="styles\weather-icons-master\_docs\less\bootstrap\utilities.less" />
+    <Content Include="styles\weather-icons-master\_docs\less\bootstrap\variables.less" />
+    <Content Include="styles\weather-icons-master\_docs\less\bootstrap\wells.less" />
+    <Content Include="styles\weather-icons-master\_docs\less\cheatsheet.less" />
+    <Content Include="styles\weather-icons-master\_docs\less\font-awesome\animated.less" />
+    <Content Include="styles\weather-icons-master\_docs\less\font-awesome\bordered-pulled.less" />
+    <Content Include="styles\weather-icons-master\_docs\less\font-awesome\core.less" />
+    <Content Include="styles\weather-icons-master\_docs\less\font-awesome\fixed-width.less" />
+    <Content Include="styles\weather-icons-master\_docs\less\font-awesome\font-awesome.less" />
+    <Content Include="styles\weather-icons-master\_docs\less\font-awesome\icons.less" />
+    <Content Include="styles\weather-icons-master\_docs\less\font-awesome\larger.less" />
+    <Content Include="styles\weather-icons-master\_docs\less\font-awesome\list.less" />
+    <Content Include="styles\weather-icons-master\_docs\less\font-awesome\mixins.less" />
+    <Content Include="styles\weather-icons-master\_docs\less\font-awesome\path.less" />
+    <Content Include="styles\weather-icons-master\_docs\less\font-awesome\rotated-flipped.less" />
+    <Content Include="styles\weather-icons-master\_docs\less\font-awesome\stacked.less" />
+    <Content Include="styles\weather-icons-master\_docs\less\font-awesome\variables.less" />
+    <Content Include="styles\weather-icons-master\_docs\less\main.less" />
+    <Content Include="styles\weather-icons-master\_docs\less\mixins.less" />
+    <Content Include="styles\weather-icons-master\_docs\less\styles.less" />
+    <Content Include="styles\weather-icons-master\_docs\less\variables.less" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\font-awesome.css" />
+    <Content Include="Content\font-awesome.min.css" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="img\Switzerland_Mountains.jpg" />
+    <Content Include="index.html" />
+    <Content Include="JS\app.js" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-theme.min.css.map" />
+    <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <None Include="Scripts\jquery-3.1.1.intellisense.js" />
+    <Content Include="Scripts\jquery-3.1.1.js" />
+    <Content Include="Scripts\jquery-3.1.1.min.js" />
+    <Content Include="Scripts\jquery-3.1.1.slim.js" />
+    <Content Include="Scripts\jquery-3.1.1.slim.min.js" />
+    <Content Include="styles\main.css" />
+    <Content Include="styles\weather-icons-master\.gitignore" />
+    <Content Include="styles\weather-icons-master\css\weather-icons-wind.css" />
+    <Content Include="styles\weather-icons-master\css\weather-icons-wind.min.css" />
+    <Content Include="styles\weather-icons-master\css\weather-icons.css" />
+    <Content Include="styles\weather-icons-master\css\weather-icons.min.css" />
+    <Content Include="styles\weather-icons-master\font\weathericons-regular-webfont.svg" />
+    <Content Include="styles\weather-icons-master\values\weathericons.xml" />
+    <Content Include="styles\weather-icons-master\_docs\gh-pages\api-list.html" />
+    <Content Include="styles\weather-icons-master\_docs\gh-pages\browserconfig.xml" />
+    <Content Include="styles\weather-icons-master\_docs\gh-pages\css\img\sky.jpg" />
+    <Content Include="styles\weather-icons-master\_docs\gh-pages\css\styles.css" />
+    <Content Include="styles\weather-icons-master\_docs\gh-pages\css\weather-icons-wind.css" />
+    <Content Include="styles\weather-icons-master\_docs\gh-pages\css\weather-icons-wind.min.css" />
+    <Content Include="styles\weather-icons-master\_docs\gh-pages\css\weather-icons.css" />
+    <Content Include="styles\weather-icons-master\_docs\gh-pages\css\weather-icons.min.css" />
+    <Content Include="styles\weather-icons-master\_docs\gh-pages\favicons\apple-touch-icon-57x57.png" />
+    <Content Include="styles\weather-icons-master\_docs\gh-pages\favicons\apple-touch-icon-60x60.png" />
+    <Content Include="styles\weather-icons-master\_docs\gh-pages\favicons\apple-touch-icon-precomposed.png" />
+    <Content Include="styles\weather-icons-master\_docs\gh-pages\favicons\apple-touch-icon.png" />
+    <Content Include="styles\weather-icons-master\_docs\gh-pages\favicons\favicon-16x16.png" />
+    <Content Include="styles\weather-icons-master\_docs\gh-pages\favicons\favicon-32x32.png" />
+    <Content Include="styles\weather-icons-master\_docs\gh-pages\favicons\favicon.ico" />
+    <Content Include="styles\weather-icons-master\_docs\gh-pages\favicons\mstile-150x150.png" />
+    <Content Include="styles\weather-icons-master\_docs\gh-pages\favicons\mstile-310x150.png" />
+    <Content Include="styles\weather-icons-master\_docs\gh-pages\favicons\mstile-70x70.png" />
+    <Content Include="styles\weather-icons-master\_docs\gh-pages\fonts\fontawesome-webfont.svg" />
+    <Content Include="styles\weather-icons-master\_docs\gh-pages\font\weathericons-regular-webfont.svg" />
+    <Content Include="styles\weather-icons-master\_docs\gh-pages\index.html" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>50725</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:50725/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

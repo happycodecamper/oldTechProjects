@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FCC_Local_Weather", "FCC_Local_Weather\FCC_Local_Weather.csproj", "{B1C301C5-C6DA-441D-A92F-B72F64A4BABB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{3E8EC7A9-E3B1-4C0F-BCA4-1570CB3F5B83}"
+	ProjectSection(SolutionItems) = preProject
+		WE-Palette.css = WE-Palette.css
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B1C301C5-C6DA-441D-A92F-B72F64A4BABB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1C301C5-C6DA-441D-A92F-B72F64A4BABB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1C301C5-C6DA-441D-A92F-B72F64A4BABB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1C301C5-C6DA-441D-A92F-B72F64A4BABB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

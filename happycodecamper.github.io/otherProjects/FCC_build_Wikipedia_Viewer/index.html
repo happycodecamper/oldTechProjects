@@ -1,0 +1,52 @@
+﻿<!--https://codepen.io/FreeCodeCamp/full/wGqEga/.-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|Playfair+Display" rel="stylesheet">
+
+    <link href="styles/main.css" rel="stylesheet" />
+    <script src="Scripts/jquery-3.1.1.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="JS/app.js"></script>
+</head>
+<body>
+    <!-- ================================= -->
+    <!-- begin wiki-logo -->
+    <div class="container-fluid">
+        <div class="row">
+            <div id="wiki-logo" title="Wikipedia-logo">
+                <img src="img/wikipedia.png" />
+            </div> <!-- end wiki-logo -->
+            <div class="text-center" id="word-search">Search</div><!--word-search-->
+            <br />
+            <!-- ================================= -->
+            <!-- begin button1 -->
+            <div class="text-center col-lg-12" id="click-sentence">
+                <a href="https://en.wikipedia.org/wiki/Special:Random"
+                   class="btn button1" role="button" title="Random article" target="_blank">
+                    <strong>Click here to get a random Wikipedia article</strong>
+                </a>
+            </div> <!-- end button1 -->
+            <!-- ================================= -->
+            <!-- begin form-control, button2 & output-->
+            <div class="text-center">
+                <input autocomplete="off" class="form-control " placeholder="Search.." id="searchTerm" />
+                <button class="btn button2" title="submit" id="search" type="button">submit</button>
+                <ul id="output"></ul>
+            </div><!-- end form-control, button2 & output-->
+        </div>
+        <!-- ================================= -->
+        <!-- begin author-page -->
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <br /><br />
+                <h5 class="author">Written and coded by &copy;Maria Brito</h5>
+            </div>
+        </div><!-- end author-page -->
+    </div>
+</body>
+</html>
